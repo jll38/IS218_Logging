@@ -1,3 +1,7 @@
+import os.path
+import pandas as pd
+from io import TextIOWrapper
+
 from flask import Blueprint, render_template, request, redirect, url_for, flash
 from app.auth.decorators import admin_required
 from flask_login import login_user, login_required, logout_user, current_user
@@ -168,5 +172,11 @@ def edit_account():
         flash('You Successfully Updated your Password or Email', 'success')
         return redirect(url_for('auth.dashboard'))
     return render_template('manage_account.html', form=form)
+
+@auth.route('/dashboard', methods=['POST'])
+def uploadFiles():
+    uploaded = request.files['file']
+    uploaded = TextIOWrapper(uploaded, encoding='utf-8')
+    csv_reader = csv.reader(uploaded, delimiter=',')
 
 
