@@ -68,3 +68,33 @@ INFO in __init__: this is the plain message
 INFO in __init__: this is the plain message
 [2022-04-21 17:34:24,650] 172.19.0.1 requested http://localhost/dashboard
 INFO in __init__: this is the plain message
+[2022-04-21 17:59:05,227] 172.19.0.1 requested http://localhost/
+INFO in __init__: this is the plain message
+[2022-04-21 17:59:07,535] 172.19.0.1 requested http://localhost/about
+INFO in __init__: this is the plain message
+[2022-04-21 17:59:08,574] 172.19.0.1 requested http://localhost/welcome
+INFO in __init__: this is the plain message
+[2022-04-21 17:59:09,432] 172.19.0.1 requested http://localhost/about
+INFO in __init__: this is the plain message
+[2022-04-21 17:59:10,071] 172.19.0.1 requested http://localhost/welcome
+INFO in __init__: this is the plain message
+[2022-04-21 17:59:10,704] 172.19.0.1 requested http://localhost/about
+INFO in __init__: this is the plain message
+[2022-04-21 18:02:26,295] 172.19.0.1 requested http://localhost/welcome
+INFO in __init__: this is the plain message
+[2022-04-21 18:02:26,918] 172.19.0.1 requested http://localhost/about
+INFO in __init__: this is the plain message
+[2022-04-21 18:02:27,254] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-21 18:02:27,711] 172.19.0.1 requested http://localhost/welcome
+INFO in __init__: this is the plain message
+[2022-04-21 18:02:28,097] 172.19.0.1 requested http://localhost/about
+INFO in __init__: this is the plain message
+[2022-04-21 18:02:28,413] 172.19.0.1 requested http://localhost/welcome
+INFO in __init__: this is the plain message
+[2022-04-21 18:02:29,514] 172.19.0.1 requested http://localhost/about
+INFO in __init__: this is the plain message
+[2022-04-21 18:02:30,051] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-21 18:02:31,340] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message

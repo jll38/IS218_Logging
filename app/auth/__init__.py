@@ -1,5 +1,5 @@
 import os.path
-
+import pandas as pd
 from io import TextIOWrapper
 
 from flask import Blueprint, render_template, request, redirect, url_for, flash
@@ -176,7 +176,8 @@ def edit_account():
 @auth.route('/dashboard', methods=['POST'])
 def uploadFiles():
     uploaded = request.files['file']
-    uploaded = TextIOWrapper(uploaded, encoding='utf-8')
-    csv_reader = csv.reader(uploaded, delimiter=',')
+    a = pd.read_csv(uploaded)
+    a.to_html("MusicTable.html")
+    html_file = a.to_html
 
 
