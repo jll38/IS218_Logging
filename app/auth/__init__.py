@@ -1,5 +1,5 @@
 import os.path
-import pandas as pd
+
 from io import TextIOWrapper
 
 from flask import Blueprint, render_template, request, redirect, url_for, flash
