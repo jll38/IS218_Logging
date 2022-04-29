@@ -6,9 +6,11 @@ from flask import Blueprint, render_template, request, redirect, url_for, flash
 from app.auth.decorators import admin_required
 from flask_login import login_user, login_required, logout_user, current_user
 from werkzeug.security import generate_password_hash
-from app.auth.forms import login_form, register_form, profile_form, security_form, user_edit_form
+from werkzeug.utils import secure_filename
+from app.auth.forms import login_form, register_form, profile_form, security_form, user_edit_form, csv_form
 from app.db import db
 from app.db.models import User
+
 
 auth = Blueprint('auth', __name__, template_folder='templates')
 from flask import current_app
@@ -35,6 +37,25 @@ def login():
             return redirect(url_for('auth.dashboard'))
     return render_template('login.html', form=form)
 
+def login(user, password):
+    form = login_form()
+    if current_user.is_authenticated:
+        return redirect(url_for('auth.dashboard'))
+    if form.validate_on_submit():
+        if user is None or not user.check_password(password):
+            flash('Invalid username or password')
+            return redirect(url_for('auth.login'))
+        else:
+            user.authenticated = True
+            db.session.add(user)
+            db.session.commit()
+            login_user(user)
+            flash("Welcome", 'success')
+            return redirect(url_for('auth.dashboard'))
+    return render_template('login.html', form=form)
+
+
+
 
 @auth.route('/register', methods=['POST', 'GET'])
 def register():
@@ -59,10 +80,24 @@ def register():
     return render_template('register.html', form=form)
 
 
-@auth.route('/dashboard')
+@auth.route('/dashboard', methods=['GET','POST'])
 @login_required
 def dashboard():
-    return render_template('dashboard.html')
+    form = csv_form()
+    if form.validate_on_submit():
+        file = form.file.data
+        # to read csv file named "samplee"
+        a = pd.read_csv(file)
+
+        # to save as html file
+        # named as "Table"
+        a.to_html("Table.htm")
+
+        # assign it to a
+        # variable (string)
+        html_file = a.to_html()
+        return render_template(html_file)
+    return render_template('dashboard.html', form=form)
 
 
 @auth.route("/logout")
@@ -173,11 +208,7 @@ def edit_account():
         return redirect(url_for('auth.dashboard'))
     return render_template('manage_account.html', form=form)
 
-@auth.route('/dashboard', methods=['POST'])
-def uploadFiles():
-    uploaded = request.files['file']
-    a = pd.read_csv(uploaded)
-    a.to_html("MusicTable.html")
-    html_file = a.to_html
+
+
 
 

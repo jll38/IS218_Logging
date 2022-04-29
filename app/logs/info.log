@@ -98,3 +98,161 @@ INFO in __init__: this is the plain message
 INFO in __init__: this is the plain message
 [2022-04-21 18:02:31,340] 172.19.0.1 requested http://localhost/dashboard
 INFO in __init__: this is the plain message
+[2022-04-28 22:07:06,063] 172.19.0.1 requested http://localhost/
+INFO in __init__: this is the plain message
+[2022-04-28 22:07:08,748] 172.19.0.1 requested http://localhost/about
+INFO in __init__: this is the plain message
+[2022-04-28 22:07:10,118] 172.19.0.1 requested http://localhost/welcome
+INFO in __init__: this is the plain message
+[2022-04-28 22:07:11,309] 172.19.0.1 requested http://localhost/about
+INFO in __init__: this is the plain message
+[2022-04-28 22:07:12,175] 172.19.0.1 requested http://localhost/welcome
+INFO in __init__: this is the plain message
+[2022-04-28 22:07:17,248] 172.19.0.1 requested http://localhost/login
+INFO in __init__: this is the plain message
+[2022-04-28 22:07:23,348] 172.19.0.1 requested http://localhost/login
+INFO in __init__: this is the plain message
+[2022-04-28 22:07:23,383] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-28 22:07:26,369] 172.19.0.1 requested http://localhost/about
+INFO in __init__: this is the plain message
+[2022-04-28 22:07:27,032] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-28 22:07:27,670] 172.19.0.1 requested http://localhost/welcome
+INFO in __init__: this is the plain message
+[2022-04-28 22:07:28,351] 172.19.0.1 requested http://localhost/about
+INFO in __init__: this is the plain message
+[2022-04-28 22:07:30,107] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-28 22:13:07,910] 172.19.0.1 requested http://localhost/
+INFO in __init__: this is the plain message
+[2022-04-28 22:13:56,694] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-28 22:16:45,145] 172.19.0.1 requested http://localhost/
+INFO in __init__: this is the plain message
+[2022-04-28 22:16:46,701] 172.19.0.1 requested http://localhost/about
+INFO in __init__: this is the plain message
+[2022-04-28 22:16:48,229] 172.19.0.1 requested http://localhost/welcome
+INFO in __init__: this is the plain message
+[2022-04-28 22:16:51,046] 172.19.0.1 requested http://localhost/account
+INFO in __init__: this is the plain message
+[2022-04-28 22:16:52,893] 172.19.0.1 requested http://localhost/profile
+INFO in __init__: this is the plain message
+[2022-04-28 22:16:55,120] 172.19.0.1 requested http://localhost/about
+INFO in __init__: this is the plain message
+[2022-04-28 22:16:55,661] 172.19.0.1 requested http://localhost/welcome
+INFO in __init__: this is the plain message
+[2022-04-28 22:16:58,493] 172.19.0.1 requested http://localhost/account
+INFO in __init__: this is the plain message
+[2022-04-28 22:17:00,368] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-28 22:17:03,184] 172.19.0.1 requested http://localhost/about
+INFO in __init__: this is the plain message
+[2022-04-28 22:17:03,625] 172.19.0.1 requested http://localhost/welcome
+INFO in __init__: this is the plain message
+[2022-04-28 22:17:05,944] 172.19.0.1 requested http://localhost/profile
+INFO in __init__: this is the plain message
+[2022-04-28 22:17:08,875] 172.19.0.1 requested http://localhost/account
+INFO in __init__: this is the plain message
+[2022-04-28 22:17:15,888] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-28 22:19:28,246] 172.19.0.1 requested http://localhost/
+INFO in __init__: this is the plain message
+[2022-04-28 22:19:30,637] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-28 22:21:46,549] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-28 22:23:53,512] 172.19.0.1 requested http://localhost/
+INFO in __init__: this is the plain message
+[2022-04-28 22:23:55,558] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-28 22:26:02,015] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-28 22:27:28,573] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-28 22:27:31,700] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-28 22:32:52,340] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-28 22:32:56,042] 172.19.0.1 requested http://localhost/
+INFO in __init__: this is the plain message
+[2022-04-28 22:32:57,238] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-28 22:32:58,610] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-28 22:33:55,913] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-28 22:33:59,760] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 16:54:35,765] 172.19.0.1 requested http://localhost/
+INFO in __init__: this is the plain message
+[2022-04-29 16:54:38,096] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 16:56:51,691] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 16:56:52,827] 172.19.0.1 requested http://localhost/about
+INFO in __init__: this is the plain message
+[2022-04-29 16:56:53,796] 172.19.0.1 requested http://localhost/welcome
+INFO in __init__: this is the plain message
+[2022-04-29 17:10:29,136] 172.19.0.1 requested http://localhost/
+INFO in __init__: this is the plain message
+[2022-04-29 17:10:31,952] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:11:13,910] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:11:18,253] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:12:40,582] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:13:31,998] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:13:40,341] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:13:50,514] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:14:45,065] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:16:30,085] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:16:32,708] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:16:50,264] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:16:50,735] 172.19.0.1 requested http://localhost/about
+INFO in __init__: this is the plain message
+[2022-04-29 17:16:51,158] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:17:34,351] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:18:30,656] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:18:34,208] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:19:14,146] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:19:17,346] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:20:02,883] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:20:23,141] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:20:29,797] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:20:41,299] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:20:43,744] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:21:48,179] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:26:45,647] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:26:49,420] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-29 17:45:38,605] 172.19.0.1 requested http://localhost/
+INFO in __init__: method: GET,  path: /,  status: 200,  duration: 0.31,  time: 2022-04-29T17:45:38Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-29 17:45:39,869] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: method: GET,  path: /dashboard,  status: 200,  duration: 0.07,  time: 2022-04-29T17:45:39Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-29 17:45:39,886] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: method: GET,  path: /dashboard,  status: 200,  duration: 0.05,  time: 2022-04-29T17:45:39Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-29 17:45:40,250] 172.19.0.1 requested http://localhost/about
+INFO in __init__: method: GET,  path: /about,  status: 200,  duration: 0.05,  time: 2022-04-29T17:45:40Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 

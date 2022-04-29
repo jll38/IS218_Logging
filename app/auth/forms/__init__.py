@@ -2,6 +2,11 @@ from flask_wtf import FlaskForm
 from wtforms import validators
 from wtforms.fields import *
 
+class csv_form(FlaskForm):
+    file = FileField('Upload your CSV file', [
+        validators.DataRequired(),
+    ], description='Submit your CSV file!')
+    submit = SubmitField()
 
 class login_form(FlaskForm):
     email = EmailField('Email Address', [

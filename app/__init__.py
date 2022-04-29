@@ -101,6 +101,7 @@ def create_app():
         elif request.path.startswith('/bootstrap'):
             return response
 
+
         now = time.time()
         duration = round(now - g.start, 2)
         dt = datetime.datetime.fromtimestamp(now)
@@ -131,7 +132,7 @@ def create_app():
             parts.append(part)
         line = " ".join(parts)
         #this triggers a log entry to be created with whatever is in the line variable
-        app.logger.info('this is the plain message')
+        app.logger.info(line)
 
         return response
 
