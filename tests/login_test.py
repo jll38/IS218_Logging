@@ -1,6 +1,8 @@
 import os.path
 from app.db.models import User
 from app.auth import login
+import pytest
+
 from flask_login import login_user, login_required, logout_user, current_user
 def login_test():
     login_user('johncena@gmail.com')
