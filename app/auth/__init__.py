@@ -1,3 +1,4 @@
+import logging
 import os.path
 import pandas as pd
 from io import StringIO
@@ -67,6 +68,7 @@ def register():
 @auth.route('/dashboard', methods=['GET','POST'])
 @login_required
 def dashboard():
+    log = logging.getLogger("myApp")
     form = csv_form()
     if form.validate_on_submit():
         file = form.file
