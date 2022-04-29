@@ -3,8 +3,6 @@ from datetime import datetime
 from werkzeug.security import check_password_hash, generate_password_hash
 from app.db import db
 from flask_login import UserMixin
-class Music(db.model):
-    __tablename__ = 'music'
 
 class User(UserMixin, db.Model):
     __tablename__ = 'users'
