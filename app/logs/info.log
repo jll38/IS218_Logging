@@ -360,3 +360,5 @@ INFO in __init__: method: GET,  path: /login,  status: 200,  duration: 0.01,  ti
 INFO in __init__: method: GET,  path: /dashboard,  status: 302,  duration: 0.0,  time: 2022-04-29T21:45:11Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
 [2022-04-29 21:45:11,611] 172.19.0.1 requested http://localhost/login?next=%2Fdashboard
 INFO in __init__: method: GET,  path: /login,  status: 200,  duration: 0.0,  time: 2022-04-29T21:45:11Z,  ip: 172.19.0.1,  host: localhost,  params: {'next': '/dashboard'}, 
+[2022-04-29 21:52:22,135] 172.19.0.1 requested http://localhost/login?next=%2Fdashboard
+INFO in __init__: method: GET,  path: /login,  status: 200,  duration: 0.21,  time: 2022-04-29T21:52:22Z,  ip: 172.19.0.1,  host: localhost,  params: {'next': '/dashboard'}, 

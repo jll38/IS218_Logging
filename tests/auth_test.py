@@ -21,4 +21,3 @@ def test_auth_pages(client):
 def test_dashboard_deny(client):
     response = client.get("/dashboard")
     assert response.status_code == 302
-    assert response.status_code == 200
