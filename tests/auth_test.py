@@ -1,5 +1,7 @@
 from flask_login import login_user, login_required, logout_user, current_user
 
+from app import User
+
 """This test the homepage"""
 
 def test_request_main_menu_links(client):
@@ -23,6 +25,7 @@ def test_dashboard_deny(client):
     assert response.status_code == 302
 
 def test_dashboard_accept(client):
-    login_user('johncena@gmail.com')
+    user = User.query.filter_by('johncena@gmail.com')
+    login_user(user)
     response = client.get("/dashboard")
     assert response.status_code == 200
