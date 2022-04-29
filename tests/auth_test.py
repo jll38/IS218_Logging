@@ -1,8 +1,5 @@
 from flask_login import login_user, login_required, logout_user, current_user
 
-def test_login():
-    assert login_user('johncena@gmail.com')
-
     """This test the homepage"""
 
 def test_request_main_menu_links(client):

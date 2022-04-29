@@ -1,7 +1,7 @@
 import os.path
 import pandas as pd
-from io import TextIOWrapper
-
+from io import StringIO
+import csv
 from flask import Blueprint, render_template, request, redirect, url_for, flash
 from app.auth.decorators import admin_required
 from flask_login import login_user, login_required, logout_user, current_user
@@ -69,20 +69,35 @@ def register():
 def dashboard():
     form = csv_form()
     if form.validate_on_submit():
-        file = form.file.data
-        # to read csv file named "samplee"
-        a = pd.read_csv(file)
+        file = form.file
+        raw_data = pd.read_csv(file.data)
+        raw_data = drop_bad_data(raw_data)
+        flash(raw_data)
 
-        # to save as html file
-        # named as "Table"
-        a.to_html("Table.htm")
-
-        # assign it to a
-        # variable (string)
-        html_file = a.to_html()
-        return render_template(html_file)
     return render_template('dashboard.html', form=form)
 
+'''Removes un-needed data from table'''
+def drop_bad_data(raw_data):
+    raw_data.drop('Spotify ID', inplace=True, axis=1)
+    raw_data.drop('Artist IDs', inplace=True, axis=1)
+    raw_data.drop('Album Name', inplace=True, axis=1)
+    raw_data.drop('Duration (ms)', inplace=True, axis=1)
+    raw_data.drop('Popularity', inplace=True, axis=1)
+    raw_data.drop('Added By', inplace=True, axis=1)
+    raw_data.drop('Added At', inplace=True, axis=1)
+    raw_data.drop('Danceability', inplace=True, axis=1)
+    raw_data.drop('Energy', inplace=True, axis=1)
+    raw_data.drop('Key', inplace=True, axis=1)
+    raw_data.drop('Loudness', inplace=True, axis=1)
+    raw_data.drop('Mode', inplace=True, axis=1)
+    raw_data.drop('Speechiness', inplace=True, axis=1)
+    raw_data.drop('Acousticness', inplace=True, axis=1)
+    raw_data.drop('Instrumentalness', inplace=True, axis=1)
+    raw_data.drop('Liveness', inplace=True, axis=1)
+    raw_data.drop('Valence', inplace=True, axis=1)
+    raw_data.drop('Tempo', inplace=True, axis=1)
+    raw_data.drop('Time Signature', inplace=True, axis=1)
+    return raw_data
 
 @auth.route("/logout")
 @login_required
