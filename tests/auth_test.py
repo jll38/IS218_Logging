@@ -1,6 +1,6 @@
 from flask_login import login_user, login_required, logout_user, current_user
 
-from app import User
+from app.db.models import User
 
 """This test the homepage"""
 
