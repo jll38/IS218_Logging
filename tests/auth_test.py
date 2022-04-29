@@ -25,7 +25,7 @@ def test_dashboard_deny(client):
     assert response.status_code == 302
 
 def test_dashboard_accept(client):
-    user = User.query.filter_by('johncena@gmail.com')
+    user = User.query.get(1)
     login_user(user)
     response = client.get("/dashboard")
     assert response.status_code == 200
