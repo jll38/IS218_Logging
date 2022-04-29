@@ -1,6 +1,6 @@
 from flask_login import login_user, login_required, logout_user, current_user
 
-def login_test(client):
+def test_login():
     login_user('johncena@gmail.com')
     assert current_user.__name == 'johncena@gmail.com'
     assert current_user.is_authenticated()
