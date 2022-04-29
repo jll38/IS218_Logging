@@ -37,22 +37,6 @@ def login():
             return redirect(url_for('auth.dashboard'))
     return render_template('login.html', form=form)
 
-def login(user, password):
-    form = login_form()
-    if current_user.is_authenticated:
-        return redirect(url_for('auth.dashboard'))
-    if form.validate_on_submit():
-        if user is None or not user.check_password(password):
-            flash('Invalid username or password')
-            return redirect(url_for('auth.login'))
-        else:
-            user.authenticated = True
-            db.session.add(user)
-            db.session.commit()
-            login_user(user)
-            flash("Welcome", 'success')
-            return redirect(url_for('auth.dashboard'))
-    return render_template('login.html', form=form)
 
 
 

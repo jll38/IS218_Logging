@@ -256,3 +256,5 @@ INFO in __init__: method: GET,  path: /dashboard,  status: 200,  duration: 0.07,
 INFO in __init__: method: GET,  path: /dashboard,  status: 200,  duration: 0.05,  time: 2022-04-29T17:45:39Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
 [2022-04-29 17:45:40,250] 172.19.0.1 requested http://localhost/about
 INFO in __init__: method: GET,  path: /about,  status: 200,  duration: 0.05,  time: 2022-04-29T17:45:40Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-29 17:55:33,126] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: method: GET,  path: /dashboard,  status: 200,  duration: 0.03,  time: 2022-04-29T17:55:33Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
