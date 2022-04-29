@@ -19,7 +19,7 @@ def test_auth_pages(client):
     assert response.status_code == 200
 
 def test_dashboard_deny(client):
-    if current_user.is_authenticated():
+    if current_user.is_authenticated:
         logout_user()
     response = client.get("/dashboard")
     assert response.status_code == 302
