@@ -1,6 +1,6 @@
 from flask_login import login_user, login_required, logout_user, current_user
 
-    """This test the homepage"""
+"""This test the homepage"""
 
 def test_request_main_menu_links(client):
     """This makes the index page"""
