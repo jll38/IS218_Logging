@@ -24,6 +24,7 @@ def test_dashboard_deny(client):
     response = client.get("/dashboard")
     assert response.status_code == 302
 
+
 def test_dashboard_accept(client):
     user = User.query.filter_by('johncena@gmail.com')
     if not User.is_authenticated():
