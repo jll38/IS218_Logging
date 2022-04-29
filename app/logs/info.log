@@ -368,3 +368,23 @@ INFO in __init__: method: GET,  path: /login,  status: 200,  duration: 0.2,  tim
 INFO in __init__: method: GET,  path: /about,  status: 200,  duration: 0.01,  time: 2022-04-29T21:57:57Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
 [2022-04-29 21:57:58,177] 172.19.0.1 requested http://localhost/
 INFO in __init__: method: GET,  path: /,  status: 200,  duration: 0.02,  time: 2022-04-29T21:57:58Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-29 22:07:38,268] 172.19.0.1 requested http://localhost/login
+INFO in __init__: method: GET,  path: /login,  status: 200,  duration: 0.2,  time: 2022-04-29T22:07:38Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-29 22:07:43,472] 172.19.0.1 requested http://localhost/login
+INFO in __init__: method: POST,  path: /login,  status: 302,  duration: 0.19,  time: 2022-04-29T22:07:43Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-29 22:07:43,506] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: method: GET,  path: /dashboard,  status: 200,  duration: 0.03,  time: 2022-04-29T22:07:43Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-29 22:07:45,124] 172.19.0.1 requested http://localhost/about
+INFO in __init__: method: GET,  path: /about,  status: 200,  duration: 0.02,  time: 2022-04-29T22:07:45Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-29 22:07:49,937] 172.19.0.1 requested http://localhost/edit_user
+INFO in __init__: method: GET,  path: /edit_user,  status: 404,  duration: 0.02,  time: 2022-04-29T22:07:49Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-29 22:07:57,421] 172.19.0.1 requested http://localhost/user_edit
+INFO in __init__: method: GET,  path: /user_edit,  status: 404,  duration: 0.01,  time: 2022-04-29T22:07:57Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-29 22:07:58,623] 172.19.0.1 requested http://localhost/welcome
+INFO in __init__: method: GET,  path: /welcome,  status: 200,  duration: 0.02,  time: 2022-04-29T22:07:58Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-29 22:07:59,360] 172.19.0.1 requested http://localhost/about
+INFO in __init__: method: GET,  path: /about,  status: 200,  duration: 0.01,  time: 2022-04-29T22:07:59Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-29 22:07:59,952] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: method: GET,  path: /dashboard,  status: 200,  duration: 0.01,  time: 2022-04-29T22:07:59Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-29 22:08:03,767] 172.19.0.1 requested http://localhost/account
+INFO in __init__: method: GET,  path: /account,  status: 200,  duration: 0.03,  time: 2022-04-29T22:08:03Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
