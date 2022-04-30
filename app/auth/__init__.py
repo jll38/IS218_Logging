@@ -77,6 +77,7 @@ def dashboard():
         file = form.file
         raw_data = pd.read_csv(file.data)
         raw_data = drop_bad_data(raw_data)
+        current_app.logger.info("Submitting CSV")
         song = Song(title='test', artist= 'test', release='test', genre='test')
         db.session.add(song)
         db.session.commit()
