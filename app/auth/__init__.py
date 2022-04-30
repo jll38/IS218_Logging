@@ -4,6 +4,8 @@ import pandas as pd
 from io import StringIO
 import csv
 from flask import Blueprint, render_template, request, redirect, url_for, flash
+from sqlalchemy import create_engine
+
 from app.auth.decorators import admin_required
 from flask_login import login_user, login_required, logout_user, current_user
 from werkzeug.security import generate_password_hash
@@ -71,28 +73,14 @@ def dashboard():
     current_app.logger.info("Loading Dashboard")
     form = csv_form()
     if form.validate_on_submit():
+        engine = create_engine('sqlite://', echo=False)
         file = form.file
         raw_data = pd.read_csv(file.data)
         raw_data = drop_bad_data(raw_data)
+        raw_data.to_sql('Song', engine)
         flash(raw_data)
 
-        seperated = raw_data.split(',')
-        count = 0
-        current_app.logger.info("Submitting CSV file")
-        for x in seperated:
-            name = seperated[count]
-            count += 1
-            artist = seperated[count]
-            count += 1
-            release = seperated[count]
-            count += 1
-            genres = seperated[count]
-            count += 1
-            songs = Song(name, artist, release, genres)
-        count = 0
-        db.session.add(songs)
-        db.session.commit()
-        return redirect((url_for('auth.dashboard')))
+
     return render_template('dashboard.html', form=form)
 
 '''Removes un-needed data from table'''
