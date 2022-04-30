@@ -7,6 +7,21 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from app.db import db
 from flask_login import UserMixin
 
+class Song(db.Model):
+    __tablename__ = 'songs'
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(300), nullable=True, unique=False)
+    artist = db.Column(db.String(300), nullable=True, unique=False)
+    release = db.Column(db.String(300), nullable=True, unique=False)
+    genre = db.Column(db.String(300), nullable=True, unique=False)
+
+
+    def __init__(self, title, artist, release, genre):
+        self.title = title
+        self.artist = artist
+        self.release = release
+        self.genre = genre
+
 class User(UserMixin, db.Model):
     __tablename__ = 'users'
 

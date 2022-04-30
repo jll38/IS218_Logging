@@ -4,13 +4,16 @@ import pandas as pd
 from io import StringIO
 import csv
 from flask import Blueprint, render_template, request, redirect, url_for, flash
+from sqlalchemy import create_engine
+
 from app.auth.decorators import admin_required
 from flask_login import login_user, login_required, logout_user, current_user
 from werkzeug.security import generate_password_hash
 from werkzeug.utils import secure_filename
 from app.auth.forms import login_form, register_form, profile_form, security_form, user_edit_form, csv_form
 from app.db import db
-from app.db.models import User
+from app.db.models import User, Song
+
 
 
 auth = Blueprint('auth', __name__, template_folder='templates')
@@ -68,13 +71,22 @@ def register():
 @auth.route('/dashboard', methods=['GET','POST'])
 @login_required
 def dashboard():
-    log = logging.getLogger("myApp")
     form = csv_form()
     if form.validate_on_submit():
-        file = form.file
-        raw_data = pd.read_csv(file.data)
-        raw_data = drop_bad_data(raw_data)
-        flash(raw_data)
+        log = logging.getLogger("myApp")
+
+        filename = secure_filename(form.file.data.filename)
+        form.file.data.save(filename)
+        # user = current_user
+        list_of_songs = []
+        with open(filename) as file:
+            csv_file = csv.DictReader(file)
+            for row in csv_file:
+                list_of_songs.append(Song(row['Track Name'], row['Artist Name(s)'], row['Release Date'], row['Genres']))
+
+        current_user.songs = list_of_songs
+        flash(list_of_songs)
+        db.session.commit()
 
     return render_template('dashboard.html', form=form)
 
