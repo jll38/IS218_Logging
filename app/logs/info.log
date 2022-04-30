@@ -648,3 +648,39 @@ INFO in __init__: Loading Dashboard
 INFO in __init__: method: GET,  path: /dashboard,  status: 200,  duration: 0.38,  time: 2022-04-30T19:35:08Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
 [2022-04-30 19:35:20,806] 172.19.0.1 requested http://localhost/dashboard
 INFO in __init__: Loading Dashboard
+[2022-04-30 19:42:48,653] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: Loading Dashboard
+[2022-04-30 19:42:48,851] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: method: GET,  path: /dashboard,  status: 200,  duration: 0.27,  time: 2022-04-30T19:42:48Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-30 19:42:53,746] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: Loading Dashboard
+[2022-04-30 19:42:53,794] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: Submitting CSV
+[2022-04-30 19:47:00,747] 172.19.0.1 requested http://localhost/
+INFO in __init__: method: GET,  path: /,  status: 200,  duration: 0.38,  time: 2022-04-30T19:47:00Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-30 19:47:02,707] 172.19.0.1 requested http://localhost/register
+INFO in __init__: method: GET,  path: /register,  status: 200,  duration: 0.06,  time: 2022-04-30T19:47:02Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-30 19:48:34,051] 172.19.0.1 requested http://localhost/register
+INFO in __init__: method: GET,  path: /register,  status: 200,  duration: 0.02,  time: 2022-04-30T19:48:34Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-30 19:48:42,225] 172.19.0.1 requested http://localhost/register
+INFO in __init__: method: POST,  path: /register,  status: 302,  duration: 0.16,  time: 2022-04-30T19:48:42Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-30 19:48:42,259] 172.19.0.1 requested http://localhost/login
+INFO in __init__: method: GET,  path: /login,  status: 200,  duration: 0.02,  time: 2022-04-30T19:48:42Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-30 19:48:51,376] 172.19.0.1 requested http://localhost/login
+INFO in __init__: method: POST,  path: /login,  status: 302,  duration: 0.17,  time: 2022-04-30T19:48:51Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-30 19:48:51,404] 172.19.0.1 requested http://localhost/login
+INFO in __init__: method: GET,  path: /login,  status: 200,  duration: 0.02,  time: 2022-04-30T19:48:51Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-30 19:48:56,178] 172.19.0.1 requested http://localhost/login
+INFO in __init__: method: POST,  path: /login,  status: 302,  duration: 0.11,  time: 2022-04-30T19:48:56Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-30 19:48:56,212] 172.19.0.1 requested http://localhost/login
+INFO in __init__: method: GET,  path: /login,  status: 200,  duration: 0.02,  time: 2022-04-30T19:48:56Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-30 19:49:02,952] 172.19.0.1 requested http://localhost/login
+INFO in __init__: method: POST,  path: /login,  status: 302,  duration: 0.2,  time: 2022-04-30T19:49:02Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-30 19:49:02,977] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: Loading Dashboard
+[2022-04-30 19:49:03,007] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: method: GET,  path: /dashboard,  status: 200,  duration: 0.04,  time: 2022-04-30T19:49:03Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-30 19:49:13,647] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: Loading Dashboard
+[2022-04-30 19:49:13,680] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: Submitting CSV
