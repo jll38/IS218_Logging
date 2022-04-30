@@ -82,7 +82,7 @@ def dashboard():
 
 
     songs = Song.query.all()
-    for song in songs:
+    for song in Song:
         string.join(song.title + ', ')
     flash(string)
     return render_template('dashboard.html', form=form)
