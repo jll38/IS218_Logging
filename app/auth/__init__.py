@@ -78,13 +78,13 @@ def dashboard():
         file = form.file
         raw_data = pd.read_csv(file.data)
         raw_data = drop_bad_data(raw_data)
-        raw_data.to_sql('Song', engine)
-
-
-    songs = Song.query.all()
-    for song in Song:
-        string.join(song.title + ', ')
-    flash(string)
+        song = Song('test', 'test', 'test', 'test')
+        db.session.add(song)
+        db.session.commit()
+    # songs = Song.query.all()
+    # for song in songs:
+    #     string.join(song.title + ', ')
+    # flash(string)
     return render_template('dashboard.html', form=form)
 
 '''Removes un-needed data from table'''
