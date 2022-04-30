@@ -50,8 +50,8 @@ def register():
         return redirect(url_for('auth.dashboard'))
     form = register_form()
     if form.validate_on_submit():
-        user = User.query.filter_by(email=form.email.data).first()
-        if user is None:
+        user = User.query.filter_by(email=form.email.data).first() # Checks if user is registered
+        if user is None:                                           # If not, add user to database
             user = User(email=form.email.data, password=generate_password_hash(form.password.data))
             db.session.add(user)
             db.session.commit()
@@ -74,11 +74,10 @@ def dashboard():
     form = csv_form()
     string = ""
     if form.validate_on_submit():
-        engine = create_engine('sqlite://', echo=False)
         file = form.file
         raw_data = pd.read_csv(file.data)
         raw_data = drop_bad_data(raw_data)
-        song = Song('test', 'test', 'test', 'test')
+        song = Song(title='test', artist= 'test', release='test', genre='test')
         db.session.add(song)
         db.session.commit()
     # songs = Song.query.all()
