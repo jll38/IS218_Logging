@@ -642,3 +642,9 @@ INFO in __init__: Loading Dashboard
 INFO in __init__: method: GET,  path: /dashboard,  status: 200,  duration: 0.03,  time: 2022-04-30T19:29:26Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
 [2022-04-30 19:29:34,247] 172.19.0.1 requested http://localhost/dashboard
 INFO in __init__: Loading Dashboard
+[2022-04-30 19:35:07,944] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: Loading Dashboard
+[2022-04-30 19:35:08,251] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: method: GET,  path: /dashboard,  status: 200,  duration: 0.38,  time: 2022-04-30T19:35:08Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
+[2022-04-30 19:35:20,806] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: Loading Dashboard
