@@ -13,7 +13,6 @@ from app.db import db
 from app.db.models import User, Song
 
 
-
 auth = Blueprint('auth', __name__, template_folder='templates')
 from flask import current_app
 
@@ -69,23 +68,31 @@ def register():
 @auth.route('/dashboard', methods=['GET','POST'])
 @login_required
 def dashboard():
+    current_app.logger.info("Loading Dashboard")
     form = csv_form()
     if form.validate_on_submit():
-        log = logging.getLogger("myApp")
+        file = form.file
+        raw_data = pd.read_csv(file.data)
+        raw_data = drop_bad_data(raw_data)
+        flash(raw_data)
 
-        filename = secure_filename(form.file.data.filename)
-        form.file.data.save(filename)
-        # user = current_user
-        list_of_songs = []
-        with open(filename) as file:
-            csv_file = csv.DictReader(file)
-            for row in csv_file:
-                list_of_songs.append(Song(row['Track Name'], row['Artist Name(s)'], row['Release Date'], row['Genres']))
-
-        current_user.songs = list_of_songs
+        seperated = raw_data.split(',')
+        count = 0
+        current_app.logger.info("Submitting CSV file")
+        for x in seperated:
+            name = seperated[count]
+            count += 1
+            artist = seperated[count]
+            count += 1
+            release = seperated[count]
+            count += 1
+            genres = seperated[count]
+            count += 1
+            songs = Song(name, artist, release, genres)
+        count = 0
+        db.session.add(songs)
         db.session.commit()
-
-        return redirect(url_for('songs.songs_browse'))
+        return redirect((url_for('auth.dashboard')))
     return render_template('dashboard.html', form=form)
 
 '''Removes un-needed data from table'''
