@@ -4,8 +4,6 @@ import pandas as pd
 from io import StringIO
 import csv
 from flask import Blueprint, render_template, request, redirect, url_for, flash
-from sqlalchemy import create_engine
-
 from app.auth.decorators import admin_required
 from flask_login import login_user, login_required, logout_user, current_user
 from werkzeug.security import generate_password_hash
@@ -85,9 +83,9 @@ def dashboard():
                 list_of_songs.append(Song(row['Track Name'], row['Artist Name(s)'], row['Release Date'], row['Genres']))
 
         current_user.songs = list_of_songs
-        flash(list_of_songs)
         db.session.commit()
 
+        return redirect(url_for('songs.songs_browse'))
     return render_template('dashboard.html', form=form)
 
 '''Removes un-needed data from table'''
