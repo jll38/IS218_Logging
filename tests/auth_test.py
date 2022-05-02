@@ -27,11 +27,7 @@ def test_dashboard_deny(client):
 
 
 def test_dashboard_accept(client):
-    # user = User.query.filter_by('johncena@gmail.com')
-    # if not User.is_authenticated():
-    #     db.session.add(user)
-    #     db.session.commit()
-    #     login_user(user)
-    login()
+    user = User.query.first()
+    login_user(user)
     response = client.get("/dashboard")
     assert response.status_code == 200
