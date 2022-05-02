@@ -772,3 +772,7 @@ INFO in __init__: method: GET,  path: /dashboard,  status: 200,  duration: 0.03,
 INFO in __init__: Loading Dashboard
 [2022-05-02 00:55:08,111] 172.19.0.1 requested http://localhost/dashboard
 INFO in __init__: Submitting CSV
+[2022-05-02 00:58:52,559] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: Loading Dashboard
+[2022-05-02 00:58:52,726] 172.19.0.1 requested http://localhost/dashboard
+INFO in __init__: method: GET,  path: /dashboard,  status: 200,  duration: 0.23,  time: 2022-05-02T00:58:52Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
