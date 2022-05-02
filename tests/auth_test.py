@@ -1,7 +1,7 @@
 from flask_login import login_user, login_required, logout_user, current_user
 from app.db import db
-from app.db.models import User
-from app.auth import login
+from app.db.models import User, Song
+
 
 """This test the homepage"""
 
@@ -28,6 +28,8 @@ def test_dashboard_deny(client):
 
 def test_dashboard_accept(client):
     user = User.query.first()
+    db.session.add(user)
+    db.session.commit()
     login_user(user)
     response = client.get("/dashboard")
     assert response.status_code == 200
